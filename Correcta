@@ -1,0 +1,45 @@
+import java.util.*;
+/**
+ *
+ * @author karen
+ */
+public class PPProblema2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+       int metros;
+       double yardas, pies, millas, operaciones, resultados;
+        
+    yardas= 1.09361;
+    pies=3.28084;
+    millas=0.000621371;
+    
+    System.out.println("Imtroduce metros");
+          Scanner entrada= new Scanner(System.in);
+       metros= entrada.nextInt();
+        System.out.println("¿Que tipo de operacion deseas realizar?");
+        System.out.println("¨1.Metros a Yardas¨");
+        System.out.println("¨2.Metros a Pies¨"); 
+        System.out.println("¨3.Metros a Millas¨");
+        int op;
+        op= entrada.nextInt();
+        
+      switch(op){
+        case 1:
+              resultados= metros * yardas;
+              System.out.println("El resultado es:" + resultados + "yardas");
+              break;
+        case 2:
+            resultados= metros* pies;
+            System.out.println("El resultado es:" + resultados + "pies");
+            break;
+        case 3:
+            resultados= metros * millas;
+            System.out.println("El resultado es:" + resultados + "millas");
+            break;
+    }
+    }  
+        
+ } 
